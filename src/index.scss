@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+
+@layer base {
+  body {
+    @apply bg-slate-900 px-5 text-white;
+    font-family: "DM Sans", sans-serif !important;
+  }
+}
+@layer components {
+  .page-container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .banner .swiper-slide {
+    height: 700px;
+  }
+  .movie-list .swiper-slide {
+    width: 300px;
+  }
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  font-weight: 500;
+  font-size: 18px;
+  .selected {
+    @apply text-primary;
+  }
+}
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
