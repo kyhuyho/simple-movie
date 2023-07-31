@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+  .movie-list-primary {
+    margin-top: 30px;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    grid-auto-columns: 80%;
+    grid-auto-flow: column;
+    grid-gap: 0 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .movie-list-primary-item {
+    scroll-snap-align: center;
+  }
+}
